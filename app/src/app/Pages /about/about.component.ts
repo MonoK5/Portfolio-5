@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [NavComponent,RouterLink],
+  imports: [NavComponent,],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
