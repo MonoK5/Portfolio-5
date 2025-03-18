@@ -1,23 +1,86 @@
-
-
+/* General Skills Section Styling */
 .skills {
-    padding: 60px 0;
+    padding: 20px 0;
     color: #000000;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .skills h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
+    color: #000000;
 }
 
-.skills ul {
-    list-style: none;
+/* Skills Grid Layout using CSS Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 boxes per row */
+    gap: 30px; /* Add some space between boxes */
+    padding: 0 10px;
 }
 
-.skills li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+/* Skill Box Styling */
+.skill-box {
+    background: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 300px;
 }
 
+/* Skill Box Image */
+.skill-box img {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
 
+/* Skill Box Text */
+.skill-box p {
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Holographic Hover Effect */
+.skill-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(45deg, rgba(3, 155, 155, 0.2), rgba(195, 4, 4, 0.2), rgba(255, 157, 0, 0.2));
+    background-size: 400% 400%;
+    animation: holographic 2s linear infinite;
+}
+
+.skill-box:hover img {
+    transform: rotate(15deg);
+}
+
+/* Holographic Animation */
+@keyframes holographic {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr); /* One box per row on small screens */
+    }
+    .skill-box {
+        padding: 30px;
+    }
+    .skill-box p {
+        font-size: 1.2em;
+    }
+}
