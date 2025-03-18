@@ -150,7 +150,7 @@ body
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-    background: linear-gradient(315deg, #000000, #626262);
+    background: linear-gradient(315deg, #ffffff, #000000);
 
 
 }
@@ -158,13 +158,13 @@ body
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #000000, #ff0058)
+  background: linear-gradient(315deg, #000000, #ffffff)
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after
 {
-  background: linear-gradient(315deg, #191d17, #00d0ff)
+  background: linear-gradient(315deg, #ffffff, #000000)
 }
 
 

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [NavComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
