@@ -2,7 +2,6 @@
 
 html {
   box-sizing: border-box;
- 
 }
 
 *,
@@ -21,7 +20,6 @@ html {
   background: #fdfeff;
   font-family: "Varela Round", sans-serif;
   margin: 0;
-  
 }
 
 nav {
@@ -35,16 +33,17 @@ nav {
   height: 60px; /* Set height for a top navigation bar */
   background: #000000; /* Dark background for the navigation bar */
   z-index: 10; /* Ensure it stays above other content */
-  padding: 0 50px; /* Padding to ensure the nav is not sticking to the edges */
+  padding: 0 px; /* Decrease the horizontal padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: to add some shadow */
 }
 
+/* Logo styling */
 .logo img {
   width: 50px; /* Set size of the logo */
   height: 50px; /* Maintain aspect ratio */
   color: #fdfeff;
   background-color: #fdfeff;
-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .menu {
@@ -56,8 +55,9 @@ border-radius: 50px;
   margin: 0;
 }
 
+/* Adjust the width and other properties of the menu items */
 .menu li {
-  width: 125px;
+  width: 120px; /* Slightly smaller width for each item */
   height: 100%; /* Make each item take the full height of the nav bar */
   display: flex;
   justify-content: center;
@@ -65,15 +65,18 @@ border-radius: 50px;
   transition: background-position-x 0.9s linear;
   text-align: center;
   position: relative;
+  margin-right: 90px; /* Reduced margin between items */
 }
 
+/* Menu item links styling */
 .menu li a {
-  font-size: 22px;
+  font-size: 20px; /* Slightly smaller font size */
   color: #ffffff;
   text-decoration: none;
   transition: all 0.45s;
 }
 
+/* Hover effect on menu items */
 .menu li:hover {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsbmtpPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
   animation: line 1s;
@@ -83,11 +86,7 @@ border-radius: 50px;
   color: #ffffff;
 }
 
-.menu li {
-  margin-right: 100px;
- 
-}
-
+/* Animation for the hover effect */
 @keyframes line {
   0% {
     background-position-x: 390px;
