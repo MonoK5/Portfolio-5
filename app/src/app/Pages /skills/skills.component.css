@@ -23,14 +23,14 @@
 /* Skill Box Styling */
 .skill-box {
     background: hsl(0, 0%, 100%);
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 40px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    width: 300px;
+    width: 370px;
 }
 
 /* Skill Box Image */
@@ -50,7 +50,7 @@
 .skill-box:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(45deg, rgba(3, 155, 155, 0.2), rgba(195, 4, 4, 0.2), rgba(255, 157, 0, 0.2));
+    background: linear-gradient(45deg, rgb(154, 240, 171), rgba(2, 128, 38, 0.2), rgb(0, 152, 33));
     background-size: 400% 400%;
     animation: holographic 2s linear infinite;
 }

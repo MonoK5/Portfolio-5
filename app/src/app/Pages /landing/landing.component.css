@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
    
+   
 }
 
 .landing {
@@ -10,6 +11,9 @@ body {
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .landing .overlay {
@@ -45,10 +49,12 @@ body {
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+    background-color: #000000;
+    border-color: #116e00;
  
 }
 
 .landing .btn:hover {
-    background-color: #383636;
+    background-color: rgb(154, 240, 171)
 }
 
