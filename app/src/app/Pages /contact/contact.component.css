@@ -19,12 +19,12 @@
     }
     
     .contact a {
-        color: #ff5e57;
+        color:  #006600;
         text-decoration: none;
     }
     
     .contact a:hover {
-        color: #e74c3c;
+        color: #e10000;
     }
     
     .contact-container {
@@ -89,6 +89,8 @@
         margin: 1rem auto;
         perspective: 1000px;
         cursor: pointer;
+        
+       
       }
       
       .card-inner {
@@ -117,12 +119,105 @@
       
       .card-front {
         background: rgb(0, 0, 0);
-        border: 1px solid #e5e7eb;
+        border: 1px solid #000000;
       }
       
       .card-back {
-        background: #8b5cf6;
-        color: white;
+        background: #000000;
+        color: rgb(0, 0, 0);
         transform: rotateY(180deg);
       }
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Card styles */
+.card {
+    width: 300px;
+    height: 250px;
+    margin: 1rem auto;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effects */
+  }
+  
+  /* The inner structure of the card */
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Hover to flip the card */
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front and back sides of the card */
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Front side with black background */
+  .card-front {
+    background: rgb(0, 0, 0);
+    border: 1px solid #e5e7eb;
+  }
+  
+  /* Back side with black background */
+  .card-back {
+    background: #000000;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  /* Hover and pulse animation */
+  .card:hover {
+    animation: pulse 1s infinite, bounce 2s infinite; /* Apply pulse and bounce on hover */
+    transform: translateY(-5px); /* Float effect on hover */
+  }
+  
+  /* Pulse animation for the card */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Slightly enlarge the card */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Bounce animation for the card */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* The card returns to its original position */
+    }
+    50% {
+      transform: translateY(-10px); /* Bounce effect */
+    }
+  }
+  
