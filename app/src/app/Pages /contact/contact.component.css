@@ -3,7 +3,17 @@
     padding: 60px 0;
     background-color: #f4f4f4;
     text-align: center;
-}
+        height: 100vh;
+        background-image: url(https://images.unsplash.com/photo-1605208018752-640a6565e886?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    
+
 
 .contact h2 {
     font-size: 2.5em;
@@ -17,5 +27,40 @@
 
 .contact a:hover {
     color: #e74c3c;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the cards */
+    padding: 20px;
+}
+
+.contact-card {
+    flex: 2 1 250px; /* Flexible cards with a minimum width of 250px */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card p {
+    margin: 10px 0;
+}
+
+.contact-card a {
+    color: #006600;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
 }
 

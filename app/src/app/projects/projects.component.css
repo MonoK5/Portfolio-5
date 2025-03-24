@@ -1,6 +1,12 @@
 
 
-body, html {
+
+.pro{
+  background-color: #f0f0f0;
+}
+
+
+body{
     margin: 0;
     height: 100%;
     display: flex;
@@ -150,7 +156,7 @@ body
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-    background: linear-gradient(315deg, #ffffff, #ffffff);
+    background: linear-gradient(315deg, #000000, #ffffff);
 
 
 }
@@ -158,13 +164,13 @@ body
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #ffffff, #ffffff)
+  background: linear-gradient(315deg, #ffffff, #000000)
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after
 {
-  background: linear-gradient(315deg, #ffffff, #ffffff)
+  background: linear-gradient(315deg, #000000, #ffffff)
 }
 
 
@@ -286,7 +292,7 @@ body
   display: inline-block;
   font-size: 1.1em;
   color: #111;
-  background: #fff;
+  background: #006600;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
