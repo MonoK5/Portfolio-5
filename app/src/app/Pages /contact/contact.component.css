@@ -1,7 +1,7 @@
 
 .contact {
     padding: 60px 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
     text-align: center;
         height: 100vh;
         background-image: url(https://images.unsplash.com/photo-1605208018752-640a6565e886?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -13,54 +13,116 @@
     
     }
     
+    .contact h2 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    
+    .contact a {
+        color: #ff5e57;
+        text-decoration: none;
+    }
+    
+    .contact a:hover {
+        color: #e74c3c;
+    }
+    
+    .contact-container {
+        display: grid; /* Use CSS Grid */
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 20px; /* Space between the cards */
+        padding: 30px;
+        justify-items: center; /* Center the cards within each grid cell */
+    }
+    
+    .contact-card {
+        width: 250px; /* Set the width of each card */
+        padding: 30px;
+        margin: 10px; /* Space between the cards */
+        border: 1px solid #0f0;
+        border-radius: 10px;
+        background-color: #000000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: bounce 2s infinite; /* Apply the bounce animation */
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .contact-card p {
+        margin: 10px 0;
+    }
+    
+    .contact-card a {
+        color: #006600;
+        text-decoration: none;
+    }
+    
+    .contact-card a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Keyframes for the bouncing effect */
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0); /* Cards in their original position */
+        }
+        50% {
+            transform: translateY(-10px); /* Cards bounce upwards */
+        }
+    }
+    
+    /* Ensures the grid layout clears properly */
+    .contact-container::after {
+        content: "";
+        clear: both; /* Clear the floats (no longer necessary with grid) */
+        display: table;
+    }
+    
 
-
-.contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-}
-
-.contact a {
-    color: #ff5e57;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: #e74c3c;
-}
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Center the cards */
-    padding: 20px;
-}
-
-.contact-card {
-    flex: 2 1 250px; /* Flexible cards with a minimum width of 250px */
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #000000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.contact-card p {
-    margin: 10px 0;
-}
-
-.contact-card a {
-    color: #006600;
-    text-decoration: none;
-}
-
-.contact-card a:hover {
-    text-decoration: underline;
-}
-
+    .card {
+        width: 200px;
+        height: 250px;
+        margin: 1rem auto;
+        perspective: 1000px;
+        cursor: pointer;
+      }
+      
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+      
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+      }
+      
+      .card-front {
+        background: rgb(0, 0, 0);
+        border: 1px solid #e5e7eb;
+      }
+      
+      .card-back {
+        background: #8b5cf6;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      

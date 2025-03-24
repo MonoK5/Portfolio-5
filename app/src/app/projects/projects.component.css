@@ -2,7 +2,7 @@
 
 
 .pro{
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 
@@ -156,7 +156,7 @@ body
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-    background: linear-gradient(315deg, #000000, #ffffff);
+    background: linear-gradient(45deg, rgb(0, 124, 25), rgba(0, 189, 54, 0.2), rgb(0, 152, 33));
 
 
 }
@@ -164,13 +164,13 @@ body
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #ffffff, #000000)
+  background: linear-gradient(45deg, rgb(0, 124, 25), rgba(0, 189, 54, 0.2), rgb(0, 152, 33));
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after
 {
-  background: linear-gradient(315deg, #000000, #ffffff)
+  background: linear-gradient(45deg, rgb(0, 124, 25), rgba(0, 189, 54, 0.2), rgb(0, 152, 33));
 }
 
 
@@ -291,8 +291,8 @@ body
 {
   display: inline-block;
   font-size: 1.1em;
-  color: #111;
-  background: #006600;
+  color: #f9f9f9;
+  background: #000000;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
@@ -302,7 +302,7 @@ body
 
 .container .box .content a:hover
 {
-  background: #686767;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background:  #006600;
+  border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }

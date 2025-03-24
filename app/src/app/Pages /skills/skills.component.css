@@ -50,7 +50,7 @@
 .skill-box:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(45deg, rgb(154, 240, 171), rgba(2, 128, 38, 0.2), rgb(0, 152, 33));
+    background: linear-gradient(45deg, rgb(0, 124, 25), rgba(0, 189, 54, 0.2), rgb(0, 152, 33));
     background-size: 400% 400%;
     animation: holographic 2s linear infinite;
 }
