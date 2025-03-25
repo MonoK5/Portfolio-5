@@ -2,7 +2,7 @@
 
 
 .pro{
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 
@@ -264,7 +264,7 @@ body
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
-  color: #000000;
+  color: #ffffff;
 }
 
 .container .box:hover .content
@@ -276,7 +276,7 @@ body
 .container .box .content h2
 {
   font-size: 2em;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 

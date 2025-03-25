@@ -1,18 +1,4 @@
 
-.contact {
-    padding: 60px 0;
-    background-color: #000000;
-    text-align: center;
-        height: 100vh;
-        background-image: url(https://images.unsplash.com/photo-1605208018752-640a6565e886?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        background-size: cover;
-        background-position: center;
-        color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-    
-    }
-    
     .contact h2 {
         font-size: 2.5em;
         margin-bottom: 1em;
@@ -29,14 +15,14 @@
     
     .contact-container {
         display: grid; /* Use CSS Grid */
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-        gap: 20px; /* Space between the cards */
-        padding: 30px;
+        grid-template-columns: repeat(3, 1fr); /* 2 cards per row */
+        gap: 0px; /* Space between the cards */
+        padding: 10px;
         justify-items: center; /* Center the cards within each grid cell */
     }
     
     .contact-card {
-        width: 250px; /* Set the width of each card */
+        width: 200px; /* Set the width of each card */
         padding: 30px;
         margin: 10px; /* Space between the cards */
         border: 1px solid #0f0;
@@ -86,7 +72,7 @@
     .card {
         width: 200px;
         height: 250px;
-        margin: 1rem auto;
+        /* margin: 1rem auto; */
         perspective: 1000px;
         cursor: pointer;
         
@@ -141,7 +127,7 @@
 
 
 
-/* Card styles */
+
 .card {
     width: 300px;
     height: 250px;
@@ -150,8 +136,7 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effects */
   }
-  
-  /* The inner structure of the card */
+
   .card-inner {
     position: relative;
     width: 100%;
@@ -160,12 +145,12 @@
     transform-style: preserve-3d;
   }
   
-  /* Hover to flip the card */
+
   .card:hover .card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Front and back sides of the card */
+ 
   .card-front,
   .card-back {
     position: absolute;
@@ -179,39 +164,38 @@
     transition: transform 0.3s ease;
   }
   
-  /* Front side with black background */
+ 
   .card-front {
     background: rgb(0, 0, 0);
-    border: 1px solid #e5e7eb;
+    border: 1px solid #000000;
   }
-  
-  /* Back side with black background */
+
   .card-back {
     background: #000000;
     color: white;
     transform: rotateY(180deg);
   }
   
-  /* Hover and pulse animation */
+  
   .card:hover {
     animation: pulse 1s infinite, bounce 2s infinite; /* Apply pulse and bounce on hover */
     transform: translateY(-5px); /* Float effect on hover */
   }
   
-  /* Pulse animation for the card */
+
   @keyframes pulse {
     0% {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1); /* Slightly enlarge the card */
+      transform: scale(1.1); 
     }
     100% {
       transform: scale(1);
     }
   }
   
-  /* Bounce animation for the card */
+
   @keyframes bounce {
     0%, 100% {
       transform: translateY(0); /* The card returns to its original position */
@@ -220,4 +204,8 @@
       transform: translateY(-10px); /* Bounce effect */
     }
   }
-  
+  .heading{
+    color: #ffffff;
+    text-align: center;
+    
+  }

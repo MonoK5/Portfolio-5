@@ -3,8 +3,8 @@
     /* Section and Content Styling */
 .about-section {
     padding: 10px 20px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
   }
   
@@ -18,7 +18,7 @@
   .about-section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #000000;
+    color: #ffffff;
   }
   
   /* Cards Container (Flexbox for Layout) */
@@ -32,7 +32,7 @@
   /* Card Styling */
   .card {
     background-color: #ffffff;
-    border: 2px solid #000000;
+    border: 2px solid  #006600;
     border-radius: 10px;
     width: 580px;
     overflow: hidden;
