@@ -1,4 +1,4 @@
-/* General Skills Section Styling */
+
 .skills {
     padding: 20px 0;
     color: #ffffff;
@@ -12,7 +12,7 @@
     color: #ffffff;
 }
 
-/* Skills Grid Layout using CSS Grid */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2 boxes per row */
@@ -20,7 +20,7 @@
     padding: 0 30px;
 }
 
-/* Skill Box Styling */
+
 .skill-box {
     background: hsl(0, 0%, 100%);
     border-radius: 50px;
@@ -33,20 +33,20 @@
     width: 350px;
 }
 
-/* Skill Box Image */
+
 .skill-box img {
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
-/* Skill Box Text */
+
 .skill-box p {
     font-size: 1.5em;
     color: #000000;
     font-weight: 500;
 }
 
-/* Holographic Hover Effect */
+
 .skill-box:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -59,7 +59,7 @@
     transform: rotate(15deg);
 }
 
-/* Holographic Animation */
+
 @keyframes holographic {
     0% {
         background-position: 0% 50%;
